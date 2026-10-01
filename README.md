@@ -45,6 +45,7 @@ The Mega sketch uses:
 - `ENA` / `IN1` / `IN2` for the right-side track
 - `ENB` / `IN3` / `IN4` for the left-side track
 - `LAUNCH_IN1` / `LAUNCH_IN2` for the launcher
+<img width="3060" height="4080" alt="1000012504" src="https://github.com/user-attachments/assets/81057490-f833-462b-bfd2-5f0e19b8b4f9" />
 
 The ESP32 communicates with the Mega over Serial2 at 115200 baud using commands shaped like:
 
@@ -121,5 +122,6 @@ The ESP32 then sends serial messages to the Mega to drive the tracks and launche
 - Use the flashlight toggle to illuminate the area with the IO4 built-in ESP32 camera flash led
 - Recenter the camera with the dedicated button
 
+<img width="3060" height="4080" alt="1000012499" src="https://github.com/user-attachments/assets/e88d21b8-2d3c-4fe9-ad29-652bc979b330" />
 
 This project is shared for personal and educational use. No explicit license file is included in the repository, so use it at your own discretion and respect the hardware and code ownership of the original author.
