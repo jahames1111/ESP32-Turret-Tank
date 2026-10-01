@@ -12,6 +12,10 @@ This project combines two microcontrollers:
 
 The result is a small, camera-equipped turret tank that can be controlled over Wi-Fi from a browser.
 
+
+https://github.com/user-attachments/assets/62b09e95-a00c-4e4d-809b-d3ad626d9494
+
+
 ## Features
 
 - Two tracked drive motors with variable speed control
@@ -102,6 +106,8 @@ The page lets you control:
 - launch button
 - flashlight toggle
 - recenter camera button
+
+
 
 ## How the Control Page Works
 
