@@ -6,7 +6,7 @@ A custom remote-controlled tank built around an ESP32-CAM and an Arduino Mega. I
 
 This project combines two microcontrollers:
 
-- ESP32-CAM: hosts the web UI, reads camera feed, controls the pan/tilt servos, and communicates with the motor controller.
+- ESP32-CAM: hosts the web UI, reads camera feed, controls the pan/tilt servos, and communicates with the motor controller via 1-wire UART.
 - Arduino Mega: drives the left and right tank tracks and activates the disc launcher.
 
 The result is a small, camera-equipped turret tank that can be controlled over Wi-Fi from a browser.
@@ -21,23 +21,16 @@ The result is a small, camera-equipped turret tank that can be controlled over W
 - Saved pan/tilt servo positions using Preferences storage
 - Browser-based control panel with sliders and buttons
 
-## Repository Files
-
-- `duotank-esp32cam.ino` — ESP32-CAM firmware, web server, camera stream, and servo controls
-- `duotank-mega.ino` — Mega firmware for track drive and disc launcher logic
-- `README.md` — project overview and setup instructions
-
 ## Hardware Used
 
 - ESP32-CAM module
 - Arduino Mega
-- 2 DC motors or tracked drive motors
-- Motor driver board (the project uses direct pins for motor control and PWM)
+- 3 of the yellow TT motors you can find all over Amazon (2 for driving, one for disk luncher)
+- L2398N x2
 - 2 servos for pan/tilt turret movement
 - Camera module integrated with ESP32-CAM
 - Disc launcher mechanism driven by a motor or actuator
-- Power supply suitable for both the ESP32 and the motors
-
+- 7.4v LiPo, charger, and 5v regulator/buck converter
 ## Wiring Notes
 
 The ESP32-CAM file defines the following key signals:
@@ -62,14 +55,14 @@ The ESP32 communicates with the Mega over Serial2 at 115200 baud using commands 
 
 For the ESP32-CAM firmware, install the following in the Arduino IDE:
 
-- ESP32 board support
+- ESP32 board support library
 - `ESP32Servo`
 - `Preferences`
-- Camera support for the ESP32-CAM board
+- Camera support for the ESP32-CAM board (comes with esp32 board library)
 
 For the Mega firmware, the standard Arduino core is sufficient.
 
-## Setup Instructions
+## Setup
 
 ### 1. Update Wi-Fi credentials
 
@@ -99,7 +92,7 @@ Open the ESP32 address in a browser, typically:
 http://<ESP32_IP_ADDRESS>
 ```
 
-The page provides:
+The page lets you control:
 
 - track speed sliders
 - camera pan slider
@@ -124,40 +117,8 @@ The ESP32 then sends serial messages to the Mega to drive the tracks and launche
 - Move the left/right track sliders to drive the tank
 - Use the pan and tilt sliders to aim the turret
 - Press and hold the launch button to fire
-- Use the flashlight toggle to illuminate the area
+- Use the flashlight toggle to illuminate the area with the IO4 built-in ESP32 camera flash led
 - Recenter the camera with the dedicated button
 
-## Notes and Safety
-
-- The project currently includes a Wi-Fi SSID/password directly in source code. Replace this before deploying outside a private test setup.
-- Motor and launcher power requirements should be matched to the hardware used.
-- Check servo travel ranges and mechanical fit before extended operation.
-- Use a proper battery or regulated power source for the motors; ESP32 and Mega power rails should be managed carefully.
-
-## License
 
 This project is shared for personal and educational use. No explicit license file is included in the repository, so use it at your own discretion and respect the hardware and code ownership of the original author.
-
-## Project Status
-
-This repository is a working proof-of-concept for a Wi-Fi controlled turret tank with camera streaming and disc-launch functionality. It is intended as a hobby project and can be expanded with improved controls, better driver logic, or a more robust mechanical design.
-
-## Quick Summary
-
-The tank is controlled from a browser over Wi-Fi, the ESP32-CAM handles video and turret control, and the Mega manages locomotion and firing. It is a compact and fun build for experimenting with robotics, embedded control, and web interfaces.
-
-## Original Code Intent
-
-The code demonstrates a practical approach to:
-
-- controlling multiple motors from a microcontroller
-- streaming a live camera over Wi-Fi
-- exposing a simple browser UI
-- communicating between ESP32 and Mega over serial
-- saving camera orientation settings to persistent memory
-
-This repository is a good starting point for a custom RC tank or turret project.
-
----
-
-If you want, I can also generate a more polished version tailored specifically for GitHub, including a project gallery, wiring diagram notes, and a cleaner hardware bill of materials.
