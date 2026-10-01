@@ -1,6 +1,7 @@
 # ESP32 Turret Tank
 
 A custom remote-controlled tank built around an ESP32-CAM and an Arduino Mega. It includes dual tracked movement, a turret with pan/tilt control, a disc launcher, a live camera stream, and a hosted web interface for control.
+<img width="3060" height="4080" alt="1000012497" src="https://github.com/user-attachments/assets/eba9e319-1267-4b9e-b6bb-d58a306b422c" />
 
 ## Overview
 
