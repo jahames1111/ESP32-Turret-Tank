@@ -4,8 +4,8 @@
 #include <Preferences.h>
 #include "esp_camera.h"
 
-const char* ssid = "NETGEAR73";
-const char* password = "wateryboat790";
+const char* ssid = "YOUR_WIFI_SSID";
+const char* password = "YOUR_WIFI_PASSWORD";
 
 WebServer server(80);
 WiFiServer streamServer(81);
