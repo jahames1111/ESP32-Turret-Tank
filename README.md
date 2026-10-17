@@ -5,12 +5,12 @@ A custom remote-controlled tank built around an ESP32-CAM and an Arduino Mega. I
 
 ## Overview
 
-This project combines two microcontrollers:
+This project combines these 2 excellent boards:
 
 - ESP32-CAM: hosts the web UI, reads camera feed, controls the pan/tilt servos, and communicates with the motor controller via 1-wire UART.
-- Arduino Mega: drives the left and right tank tracks and activates the disc launcher.
+- Arduino Mega: drives the left and right tank tracks and activates the disc launcher through 2 L2398N's.
 
-The result is a small, camera-equipped turret tank that can be controlled over Wi-Fi from a browser.
+The result is a small, camera-equipped turret tank that has a custom built control panel over Wi-Fi from a browser.
 
 
 https://github.com/user-attachments/assets/62b09e95-a00c-4e4d-809b-d3ad626d9494
@@ -18,15 +18,15 @@ https://github.com/user-attachments/assets/62b09e95-a00c-4e4d-809b-d3ad626d9494
 
 ## Features
 
-- Two tracked drive motors with variable speed control
+- Two motors on both sides with variable speed control
 - Pan and tilt camera movement
 - Live camera stream on a hosted webpage
-- Launch button for a disc-shooting turret mechanism
+- Launch button for a disc-shooting auto-reloading turret
 - Flashlight toggle for the ESP32-CAM
 - Saved pan/tilt servo positions using Preferences storage
-- Browser-based control panel with sliders and buttons
 
 ## Hardware Used
+<img width="750" height="275" alt="image" src="https://github.com/user-attachments/assets/92b309ab-9ca0-4eef-88a4-2cf36c43fe98" />
 
 - ESP32-CAM module
 - Arduino Mega
@@ -37,6 +37,7 @@ https://github.com/user-attachments/assets/62b09e95-a00c-4e4d-809b-d3ad626d9494
 - Disc launcher mechanism driven by a motor or actuator
 - 7.4v LiPo, charger, and 5v regulator/buck converter
 ## Wiring Notes
+<img width="960" height="720" alt="Untitled drawing" src="https://github.com/user-attachments/assets/100bc1b9-c347-4db1-8033-65b8753c6aa0" />
 
 The ESP32-CAM file defines the following key signals:
 
@@ -66,7 +67,7 @@ For the ESP32-CAM firmware, install the following in the Arduino IDE:
 - `Preferences`
 - Camera support for the ESP32-CAM board (comes with esp32 board library)
 
-For the Mega firmware, the standard Arduino core is sufficient.
+For the Mega firmware:
 
 ## Setup
 
@@ -120,14 +121,5 @@ The web page sends commands to the ESP32 server via HTTP endpoints:
 
 The ESP32 then sends serial messages to the Mega to drive the tracks and launcher.
 
-## Example Operation
-
-- Move the left/right track sliders to drive the tank
-- Use the pan and tilt sliders to aim the turret
-- Press and hold the launch button to fire
-- Use the flashlight toggle to illuminate the area with the IO4 built-in ESP32 camera flash led
-- Recenter the camera with the dedicated button
-
 <img width="3060" height="4080" alt="1000012499" src="https://github.com/user-attachments/assets/e88d21b8-2d3c-4fe9-ad29-652bc979b330" />
 
-This project is shared for personal and educational use. No explicit license file is included in the repository, so use it at your own discretion and respect the hardware and code ownership of the original author.
