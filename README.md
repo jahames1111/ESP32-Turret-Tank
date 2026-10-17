@@ -28,14 +28,6 @@ https://github.com/user-attachments/assets/62b09e95-a00c-4e4d-809b-d3ad626d9494
 ## Hardware Used
 <img width="750" height="275" alt="image" src="https://github.com/user-attachments/assets/92b309ab-9ca0-4eef-88a4-2cf36c43fe98" />
 
-- ESP32-CAM module
-- Arduino Mega
-- 3 of the yellow TT motors you can find all over Amazon (2 for driving, one for disk luncher)
-- L2398N x2
-- 2 servos for pan/tilt turret movement
-- Camera module integrated with ESP32-CAM
-- Disc launcher mechanism driven by a motor or actuator
-- 7.4v LiPo, charger, and 5v regulator/buck converter
 ## Wiring Notes
 <img width="960" height="720" alt="Untitled drawing" src="https://github.com/user-attachments/assets/100bc1b9-c347-4db1-8033-65b8753c6aa0" />
 
