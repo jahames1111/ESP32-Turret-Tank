@@ -16,7 +16,8 @@ This is a tank that I built in my free time that has a live camera view, full 36
 <img width="750" height="275" alt="image" src="https://github.com/user-attachments/assets/92b309ab-9ca0-4eef-88a4-2cf36c43fe98" />
 
 ## Wiring
-<img width="960" height="720" alt="Untitled drawing (3)" src="https://github.com/user-attachments/assets/04a61e72-3020-4ac0-9ebe-531f642f1525" />
+<img width="960" height="720" alt="Untitled drawing (4)" src="https://github.com/user-attachments/assets/0041be37-938d-48c5-a34e-100adf41a5ab" />
+
 
 The esp32 hosts a page that lets you control:
 
