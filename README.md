@@ -3,11 +3,6 @@
 This is a tank that I built in my free time that has a live camera view, full 360 degree turn steering, and a turret that shoots small disks.
 <img width="3060" height="4080" alt="1000012497" src="https://github.com/user-attachments/assets/eba9e319-1267-4b9e-b6bb-d58a306b422c" />
 
-
-
-https://github.com/user-attachments/assets/62b09e95-a00c-4e4d-809b-d3ad626d9494
-
-
 ## Features
 
 - Two motors on both sides with variable speed control
