@@ -13,7 +13,8 @@ This is a tank that I built in my free time that has a live camera view, full 36
 - Saved pan/tilt servo positions using Preferences
 
 ## Hardware Used
-<img width="750" height="275" alt="image" src="https://github.com/user-attachments/assets/92b309ab-9ca0-4eef-88a4-2cf36c43fe98" />
+<img width="859" height="446" alt="image" src="https://github.com/user-attachments/assets/e114cb6c-3f39-4d60-ba17-78d171886373" />
+
 
 ## Wiring
 <img width="960" height="720" alt="Untitled drawing (4)" src="https://github.com/user-attachments/assets/0041be37-938d-48c5-a34e-100adf41a5ab" />
