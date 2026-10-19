@@ -13,7 +13,17 @@ This is a tank that I built in my free time that has a live camera view, full 36
 - Saved pan/tilt servo positions using Preferences
 
 ## Hardware Used
-<img width="859" height="446" alt="image" src="https://github.com/user-attachments/assets/e114cb6c-3f39-4d60-ba17-78d171886373" />
+|Item                    |Qty|Supplier  |Cost/item|Total Cost|link                                                |
+|------------------------|---|----------|---------|----------|----------------------------------------------------|
+|ESP32-CAM with ov3660   |1  |Amazon    |$10.50   |$10.50    |https://www.amazon.com/dp/B07RXPHYNM                |
+|Arduino Mega            |1  |Amazon    |$17.00   |$17.00    |https://www.amazon.com/dp/B0GTPSYSTZ                |
+|3x TT motors            |1  |Amazon    |$6.00    |$6.00     |https://www.amazon.com/dp/B098JS2ZLF                |
+|4 MG90 or similar servos|1  |Amazon    |$8.00    |$8.00     |https://www.amazon.com/dp/B07MLR1498                |
+|L298N                   |2  |Amazon    |$7.50    |$15.00    |https://www.amazon.com/dp/B07PFC4RRB                |
+|2s Lipo                 |1  |Aliexpress|$4.66    |$4.66     |https://www.aliexpress.us/item/3256809942884416.html|
+|Capacitor               |1  |Aliexpress|$0.23    |$0.23     |https://www.aliexpress.us/item/3256809487562748.html|
+|Estimated total shipping|1  |          |         |$0.00     |                                                    |
+
 
 
 ## Wiring
