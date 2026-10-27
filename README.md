@@ -47,6 +47,12 @@ The ESP32 then sends serial messages to the Mega to drive the tracks and launche
 ## Basic Assembly
 This project features a 3d printed frame with the components either glued and screwed into the lower sides of the frame (the drive motors) or glued onto the top of the frame (the electronics and servos).
 
+
+
 There is a 2 inch high bridge constructed of popsicle sticks that holds the 3d printed turret and mechanisims on the top of it. It is shaped like a trapezoid with an additional support on the back.
+
+# Onshape link 1: https://cad.onshape.com/documents/bb438665d57f8d2109cc260d/w/c4bb511ac31de86fe46c90df/e/f093d5faaa9c490568643e3e
+
+# Onshape link 2: https://cad.onshape.com/documents/da430963f83c49066f02c2fe/w/dd956b232099007f782a6f74/e/902cd87852652468555c7002
 <img width="3060" height="4080" alt="1000012499" src="https://github.com/user-attachments/assets/e88d21b8-2d3c-4fe9-ad29-652bc979b330" />
 
